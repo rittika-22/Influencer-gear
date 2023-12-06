@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@200;400;500&display=swap');
+body{
+   background-color: #ecebeb;
+  font-family: 'poppins', sans-serif;
+} 
+.all{
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-left: 130px;
+} 
+.headerpart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .logo{
+    font-size: 20px;
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 15px;
+    display: inline-block;
+    transition: 0.5s;
+}
+    
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    background-color: gray;
+    color: rgb(231, 235, 239);
+}
+.one{
+    display: flex;
+    align-items: center;
+}
+.text1{
+    width: 50%;
+}
+.text1 h1{
+    width: 50%;
+    transition: width 2s;
+}
+.text1 h1:hover{
+    width: 90%;
+    background: rgb(124, 120, 120);
+ }
+.text1 p{
+  color: gray;
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+.text1 a{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 50px;
+}
+a:hover {
+    background-color: rgb(175, 184, 190);
+}
+.img1{
+    margin-left: 180px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.heading{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 480px;
+}
+.details{
+    width: 320px;
+    height: 476px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding: 16px 18px;
+}
+.details .banner img{
+    width: 300px;
+    height: 256px;
+}
+.details .title{
+    font-size: 28px;
+    margin-top: 5px;
+    font-weight: 500;
+    color: #18191F;
+    margin-bottom: -5px;
+}
+.details .price{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.rating-info{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+ .fa-star{
+    color: #FB8200;
+    width: 16px;
+    height: 16px;
+}
+.fa-star-half-alt{
+    color: #FB8200;
+    width: 16px;
+    height: 16px;
+}
+.rating-digits{
+    font-size: 14px;
+    margin-left: 16px;
+ }
+.course-short-info{
+align-items: center;
+}
+.see-more{
+    display:flex;
+    justify-content:right;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 80px;
+}
+#extra{
+    width: 400px;
+    height: 256px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
+.link-button{
+    text-decoration: none;
+    padding: 10px 50px;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 50px;
+}
+footer{
+    text-align: center;
+    justify-content:center;
+     background: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0%;
+}
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-left:3px;
+    padding-right: 3px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+.icons{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-color: antiquewhite;
+        width: 100%;
+    }
+    .all{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: auto;
+        margin-left: 60px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .one{
+        flex-direction: column;
+    }
+    .text1{
+        order: 2;
+    }
+    .text1 a{
+        margin-left: -50px;
+    }
+    .img1{
+        order: 1;
+        margin-left: -40px;
+    }
+    .text1 h1{
+        transition: width 2s;
+        width: 100%;
+        margin-left: -80px;
+    }
+    .text1 p {
+        margin-right:0;
+        margin-left: -80px;
+    }
+    .text1 h2{
+        margin-left: -80px;
+    }
+    #extra{
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+    .grid{
+        grid-template-columns: repeat(1 ,1fr);
+        margin-left: 40px;
+    }
+    .heading{
+        font-size: 28px;
+        margin-bottom: 30px;
+        margin-left: 78px;
+        margin-top: 40px;
+    }
+    .link-button{
+        text-decoration: none;
+        background-color: #E02C6D;
+        color: white;
+        border-radius: 50px;
+        margin-left: -80px;
+    }
+    footer{
+        margin-top: 40px;
+    }
+    .see-more{
+        margin-right: 40px;
+    }
+
+}
+    
+
+
+
+
+
